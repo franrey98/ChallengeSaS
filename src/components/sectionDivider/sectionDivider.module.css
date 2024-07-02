@@ -1,0 +1,16 @@
+.divider {
+    background-color: #6b7280; /* bg-gray-500 */
+    margin-top: 3rem; /* my-24 */
+    margin-bottom: 6rem; /* my-24 */
+    height: 0.4rem; /* h-16 */
+    width: 10rem; /* w-1 */
+    border-radius: 9999px; /* full */
+    display: none; /* hidden */
+  }
+  
+  @media (min-width: 640px) {
+    .divider {
+      display: block; /* sm:block */
+    }
+  }
+ 
