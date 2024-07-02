@@ -20,13 +20,12 @@ const ContactForm = () => {
   });
 
   const handleSubmit = (values: any, { resetForm }: any) => {
-    // Aquí puedes manejar el envío del formulario
     console.log(values);
     resetForm();
   };
 
   return (
-    <div id="contact" className="form-container">
+    <div id="contact" className={styles["form-container"]}>
       <h2>Contacto</h2>
       <Formik
         initialValues={initialValues}
@@ -35,52 +34,69 @@ const ContactForm = () => {
       >
         {({ errors, touched, isSubmitting }) => (
           <Form>
-            <div className="form-field">
-              <label htmlFor="name">Nombre</label>
+            <div className={styles["form-field"]}>
+              <label htmlFor="name" className={styles["label"]}>
+                Nombre
+              </label>
               <Field
                 type="text"
                 id="name"
                 name="name"
-                className={errors.name && touched.name ? "input-error" : ""}
+                className={`${styles["input-field"]} ${
+                  errors.name && touched.name ? styles["input-error"] : ""
+                }`}
               />
               <ErrorMessage
                 name="name"
                 component="div"
-                className="error-message"
+                className={styles["error-message"]}
               />
             </div>
-            <div className="form-field">
-              <label htmlFor="email">Correo Electrónico</label>
+
+            <div className={styles["form-field"]}>
+              <label htmlFor="email" className={styles["label"]}>
+                Correo Electrónico
+              </label>
               <Field
                 type="email"
                 id="email"
                 name="email"
-                className={errors.email && touched.email ? "input-error" : ""}
+                className={`${styles["input-field"]} ${
+                  errors.email && touched.email ? styles["input-error"] : ""
+                }`}
               />
               <ErrorMessage
                 name="email"
                 component="div"
-                className="error-message"
+                className={styles["error-message"]}
               />
             </div>
-            <div className="form-field">
-              <label htmlFor="message">Mensaje</label>
+
+            <div className={styles["form-field"]}>
+              <label htmlFor="message" className={styles["label"]}>
+                Mensaje
+              </label>
               <Field
                 as="textarea"
                 id="message"
                 name="message"
                 rows="4"
-                className={
-                  errors.message && touched.message ? "input-error" : ""
-                }
+                className={`${styles["textarea-field"]} ${
+                  errors.message && touched.message ? styles["input-error"] : ""
+                }`}
               />
               <ErrorMessage
                 name="message"
                 component="div"
-                className="error-message"
+                className={styles["error-message"]}
               />
             </div>
-            <button type="submit" disabled={isSubmitting}>
+
+            <button
+              type="submit"
+              className={styles["submit-button"]}
+              disabled={isSubmitting}
+            >
               Enviar
             </button>
           </Form>

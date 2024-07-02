@@ -1,11 +1,10 @@
-
 .form-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f3f3f3;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -13,15 +12,14 @@
     margin-bottom: 1rem;
   }
   
-  label {
+  .label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  .input-field,
+  .textarea-field {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
@@ -30,36 +28,36 @@
     box-sizing: border-box;
   }
   
-  textarea {
+  .textarea-field {
     resize: vertical;
   }
   
-  .input-error {
-    border-color: #ff0000;
-  }
-  
   .error-message {
-    color: #ff0000;
+    color: #f44336;
     font-size: 0.875rem;
     margin-top: 0.25rem;
   }
   
-  button {
-    background-color: #007bff;
-    color: #fff;
+  .input-error {
+    border-color: #f44336;
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
     border: none;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+  .submit-button:hover {
+    background-color: #45a049;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
   }

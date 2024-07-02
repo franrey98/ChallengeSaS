@@ -12,8 +12,10 @@ export default function Home() {
     <main className={styles.main}>
       <Intro />
       <SectionDivider />
-      <About />
-      <Interests />
+      <div style={{ display: "flex", gap: "5rem" }}>
+        <About />
+        <Interests />
+      </div>
       <SectionDivider />
       <ContactForm />
       <Footer />
