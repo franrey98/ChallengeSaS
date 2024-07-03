@@ -6,8 +6,8 @@ Desafio realizado para la empresa Security and System con el fin de unirme a su 
 Asegúrate de tener Node.js y npm instalados en tu computadora.
 
 ## Clona el repositorio:
-git clone buscarnombre
-cd proyecto
+git clone https://github.com/franrey98/ChallengeSaS.git
+cd ChallengeSaS
 
 ## Instala las dependencias:
 npm install
