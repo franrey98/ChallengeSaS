@@ -12,7 +12,7 @@ export default function Home() {
     <main className={styles.main}>
       <Intro />
       <SectionDivider />
-      <div style={{ display: "flex", gap: "5rem" }}>
+      <div className={styles.about}>
         <About />
         <Interests />
       </div>

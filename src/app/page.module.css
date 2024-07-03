@@ -1,7 +1,7 @@
 /* styles.module.css */
 .body {
-  background-color: #f9fafb;
-  color: #1f2937;
+  background-color: #f8f8f8;
+  color: #000d1f;
   position: relative;
   height: 2000px;
   padding-top: 7rem; /* pt-28 */
@@ -49,6 +49,22 @@
   border-radius: 9999px; /* full */
   filter: blur(10rem);
   z-index: -10;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+ 
+}
+
+@media (min-width:640px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+  }
 }
 
 @media (min-width: 640px) {

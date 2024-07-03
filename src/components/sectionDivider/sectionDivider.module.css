@@ -1,6 +1,6 @@
 .divider {
     background-color: #6b7280; /* bg-gray-500 */
-    height: 0.4rem; /* h-16 */
+    height: 0.25rem; /* h-16 */
     width: 10rem; /* w-1 */
     border-radius: 9999px; /* full */
     display: none; /* hidden */

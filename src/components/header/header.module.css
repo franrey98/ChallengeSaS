@@ -1,15 +1,26 @@
 .header {
-    z-index: 999;
-    position: relative;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none; /* Optional: Prevents interaction when hidden */
   }
   
   .motionDiv {
     position: fixed;
     top: 0;
     left: 50%;
-    height: 4.5rem;
-    width: 100%;
-    border-radius: 0;
+    height: 3.5rem;
+    margin-top: 13px;
+    width: 16rem;
+    border-radius: 5rem;
     border: 1px solid white;
     background-color: white;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.03);
@@ -20,6 +31,7 @@
     .motionDiv {
       top: 1.3rem;
       height: 3.25rem;
+      margin-top: 0;
       width: 36rem;
       border-radius: 9999px; /* full */
     }
@@ -80,6 +92,7 @@
     padding-top: 0.75rem; /* 3/4 */
     padding-bottom: 0.75rem; /* 3/4 */
     transition: color 0.2s;
+    cursor: pointer;
   }
   
   .link:hover {

@@ -1,12 +1,20 @@
 .interests {
     max-width: 600px;
-    margin: 0 auto;
+    height: 480px;
+    margin: 0 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+  }
+
+  @media (min-width:640px) {
+      .interests {
+        height: 420px;
+        margin-top: 3rem;
+      }
   }
   
   .heading {
@@ -17,7 +25,7 @@
   
   .interestsList {
     display: grid;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
   }
   

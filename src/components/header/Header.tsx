@@ -1,13 +1,30 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./header.module.css";
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${!isVisible ? styles.hidden : ""}`}>
       <motion.div
         className={styles.motionDiv}
         initial={{ y: -100, x: "-50%", opacity: 0 }}
@@ -22,9 +39,14 @@ const Header = () => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link className={styles.link} href={link.hash}>
+              <ScrollLink
+                to={link.hash}
+                smooth={true}
+                duration={500}
+                className={styles.link}
+              >
                 {link.name}
-              </Link>
+              </ScrollLink>
             </motion.li>
           ))}
         </ul>

@@ -1,14 +1,26 @@
 /* about.module.css */
+
+.text{
+  margin-top: 1rem;
+   line-height: 35px;
+}
+
 .section {
-    margin-bottom: 7rem; /* mb-28 */
-    max-width: 45rem;
-    text-align: center;
-    line-height: 1.6; /* leading-8 */
-    scroll-margin-top: 28rem; /* scroll-mt-28 */
+  max-width: 600px;
+  height: 550px;
+  margin: 0px 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
   }
   
-  @media (min-width: 640px) {
-    .section {
-      margin-bottom: 5rem; /* sm:mb-40 */
+
+  @media (min-width:640px) {
+    .section{
+      height: 420px;
+      margin-top: 3rem;
     }
   }

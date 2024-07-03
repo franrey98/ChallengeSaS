@@ -1,21 +1,32 @@
+.contact {
+  margin-top: 5rem;
+}
+
 .form-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    margin-top: 4rem;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  
   .form-field {
     margin-bottom: 1rem;
+  }
+
+  .form {
+    margin-top: 5rem;
   }
   
   .label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #000000;
   }
   
   .input-field,
@@ -23,9 +34,11 @@
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #0c0c0c;
+    background-color: #ffffff;
     border-radius: 4px;
     box-sizing: border-box;
+    color: #000000;
   }
   
   .textarea-field {
@@ -43,9 +56,9 @@
   }
   
   .submit-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: rgb(19, 0, 0);
+    border: 1px solid #000000;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 4px;
@@ -54,7 +67,10 @@
   }
   
   .submit-button:hover {
-    background-color: #45a049;
+    background-color: #000000;
+    border: 1px border solid;
+    border-color: #ffffff;
+    color: #ffffff;
   }
   
   .submit-button:disabled {
