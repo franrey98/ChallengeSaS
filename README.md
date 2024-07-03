@@ -1,20 +1,19 @@
-Challenge SyS
+# Challenge SyS
 
 Desafio realizado para la empresa Security and System con el fin de unirme a su equipo de desarrolladores Frontend.
 
-Instalación
+## Instalación
 Asegúrate de tener Node.js y npm instalados en tu computadora.
 
-Clona el repositorio:
+## Clona el repositorio:
 git clone buscarnombre
 cd proyecto
 
-Instala las dependencias:
+## Instala las dependencias:
 npm install
 
-En el directorio del proyecto, puedes ejecutar:
-npm run dev
-Ejecuta la aplicación en modo de desarrollo.
+## En el directorio del proyecto, puedes ejecutar:
+npm run dev <-- Ejecuta la aplicación en modo de desarrollo.
 Abre http://localhost:3000 para verla en el navegador.
 
 npm run build
