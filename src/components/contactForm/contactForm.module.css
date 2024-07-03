@@ -1,8 +1,16 @@
-.contact {
-  margin-top: 5rem;
+.contact { 
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width:640px) {
+    .contact {
+      margin-top:-6rem;
+    }
 }
 
 .form-container {
+  position: relative;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -19,7 +27,13 @@
   }
 
   .form {
-    margin-top: 5rem;
+    width: 18rem;
+  }
+
+  @media (min-width:640px) {
+      .form {
+        width: 35rem;
+      }
   }
   
   .label {
@@ -76,4 +90,53 @@
   .submit-button:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
+  }
+
+  .successMessage {
+    position: absolute;
+    margin-bottom: 0rem;
+    bottom: 1rem;
+    width: 330px;
+    text-align: center;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1em;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    animation: fadeInOut 3s forwards;
+  }
+
+  @media (min-width:640px) {
+      .successMessage {
+        position: absolute;
+        margin-bottom: 0rem;
+        bottom: 12rem;
+        width: 600px;
+        text-align: center;
+        background-color: #d4edda;
+        color: #155724;
+        padding: 1em;
+        border: 1px solid #c3e6cb;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        animation: fadeInOut 3s forwards;
+      }
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }

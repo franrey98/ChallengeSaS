@@ -1,11 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import styles from "./contactForm.module.css";
 import * as Yup from "yup";
 import SectionHeading from "../sectionHeading/SectionHeading";
 
 const ContactForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const initialValues = {
     name: "",
     email: "",
@@ -20,9 +22,11 @@ const ContactForm = () => {
     message: Yup.string().required("El mensaje es requerido"),
   });
 
-  const handleSubmit = (values: any, { resetForm }: any) => {
+  const handleSubmit = async (values: any, { resetForm }: any) => {
     console.log(values);
-    resetForm();
+    await resetForm();
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
 
   return (
@@ -35,7 +39,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
         >
           {({ errors, touched, isSubmitting }) => (
-            <Form className={styles.form} style={{ width: "35rem" }}>
+            <Form className={styles.form}>
               <div className={styles["form-field"]}>
                 <label htmlFor="name" className={styles.label}>
                   Nombre
@@ -108,6 +112,11 @@ const ContactForm = () => {
           )}
         </Formik>
       </div>
+      {!isSubmitted && (
+        <div className={styles.successMessage}>
+          ¡Formulario enviado exitosamente!
+        </div>
+      )}
     </div>
   );
 };

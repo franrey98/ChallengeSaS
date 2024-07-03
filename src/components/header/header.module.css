@@ -10,7 +10,7 @@
 
   .hidden {
     opacity: 0;
-    pointer-events: none; /* Optional: Prevents interaction when hidden */
+    pointer-events: none;
   }
   
   .motionDiv {
@@ -33,7 +33,7 @@
       height: 3.25rem;
       margin-top: 0;
       width: 36rem;
-      border-radius: 9999px; /* full */
+      border-radius: 9999px;
     }
   }
   
@@ -42,10 +42,10 @@
     position: fixed;
     top: 1rem;
     left: 50%;
-    height: 3rem; /* 12/4 */
+    height: 3rem; 
     transform: translateX(-50%);
-    padding-top: 0.5rem; /* 2/4 */
-    padding-bottom: 0.5rem; /* 2/4 */
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
   }
   
   @media (min-width: 640px) {
@@ -63,16 +63,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0.25rem; /* 1/4 */
+    gap: 0.25rem; 
     font-size: 0.9rem;
     font-weight: 500;
-    color: #6b7280; /* gray-500 */
+    color: #6b7280; 
   }
   
   @media (min-width: 640px) {
     .ul {
       flex-wrap: nowrap;
-      gap: 1.25rem; /* 5/4 */
+      gap: 1.25rem; 
     }
   }
   
@@ -87,14 +87,14 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-left: 0.75rem; /* 3/4 */
-    padding-right: 0.75rem; /* 3/4 */
-    padding-top: 0.75rem; /* 3/4 */
-    padding-bottom: 0.75rem; /* 3/4 */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     transition: color 0.2s;
     cursor: pointer;
   }
   
   .link:hover {
-    color: #1f2937; /* gray-950 */
+    color: #1f2937; 
   }

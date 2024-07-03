@@ -1,15 +1,15 @@
 .section {
-    margin-bottom: 2rem; /* mb-28 */
+    margin-bottom: 2rem;
     max-width: 50rem;
     text-align: center;
     position: relative;
-    scroll-margin-top: 100rem; /* scroll-mt-[100rem] */
+    scroll-margin-top: 100rem; 
   }
   
   @media (min-width: 640px) {
     .section {
       margin-bottom: 7rem;
-      margin-bottom: 0; /* sm:mb-0 */
+      margin-bottom: 0; 
     }
   }
   
@@ -24,35 +24,35 @@
   }
   
   .image {
-    height: 11rem; /* h-44 */
-    width: 11rem; /* w-44 */
-    border-radius: 9999px; /* rounded-full */
+    height: 11rem;
+    width: 11rem; 
+    border-radius: 9999px; 
     border-width: 0.35rem;
-    border-color: rgb(236, 230, 230); /* border-white */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* shadow-xl */
+    border-color: rgb(236, 230, 230);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
   }
   
   .wave {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 3rem; /* text-5xl */
+    font-size: 3rem;
   }
   
   .heading {
     position: relative;
-    margin-bottom: 2.5rem; /* mb-10 */
-    margin-top: 1rem; /* mt-4 */
-    padding-left: 1rem; /* px-4 */
-    padding-right: 1rem; /* px-4 */
-    font-size: 1.5rem; /* text-2xl */
-    font-weight: 500; /* font-medium */
-    line-height: 1.5; /* !leading-[1.5] */
+    margin-bottom: 2.5rem;
+    margin-top: 1rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    line-height: 1.5; 
   }
   
   @media (min-width: 640px) {
     .heading {
-      font-size: 2.25rem; /* sm:text-4xl */
+      font-size: 2.25rem; 
     }
   }
   
