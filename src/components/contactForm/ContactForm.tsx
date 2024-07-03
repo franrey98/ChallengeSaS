@@ -15,11 +15,11 @@ const ContactForm = () => {
   };
 
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required("El nombre es requerido"),
+    name: Yup.string().required("El nombre es requerido."),
     email: Yup.string()
       .email("Correo electrónico inválido")
-      .required("El correo electrónico es requerido"),
-    message: Yup.string().required("El mensaje es requerido"),
+      .required("El correo electrónico es requerido."),
+    message: Yup.string().required("El mensaje es requerido."),
   });
 
   const handleSubmit = async (values: any, { resetForm }: any) => {
@@ -112,7 +112,7 @@ const ContactForm = () => {
           )}
         </Formik>
       </div>
-      {!isSubmitted && (
+      {isSubmitted && (
         <div className={styles.successMessage}>
           ¡Formulario enviado exitosamente!
         </div>

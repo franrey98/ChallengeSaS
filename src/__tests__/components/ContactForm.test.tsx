@@ -23,13 +23,13 @@ describe("ContactForm", () => {
     });
 
     expect(
-      await screen.findByText(/El nombre es requerido/i)
+      await screen.findByText(/El nombre es requerido./i)
     ).toBeInTheDocument();
     expect(
-      await screen.findByText(/El correo electrónico es requerido/i)
+      await screen.findByText(/El correo electrónico es requerido./i)
     ).toBeInTheDocument();
     expect(
-      await screen.findByText(/El mensaje es requerido/i)
+      await screen.findByText(/El mensaje es requerido./i)
     ).toBeInTheDocument();
 
     await act(async () => {
@@ -43,10 +43,10 @@ describe("ContactForm", () => {
       fireEvent.click(submitButton);
     });
 
-    expect(screen.queryByText(/El nombre es requerido/i)).toBeNull();
+    expect(screen.queryByText(/El nombre es requerido./i)).toBeNull();
     expect(
-      screen.queryByText(/El correo electrónico es requerido/i)
+      screen.queryByText(/El correo electrónico es requerido./i)
     ).toBeNull();
-    expect(screen.queryByText(/El mensaje es requerido/i)).toBeNull();
+    expect(screen.queryByText(/El mensaje es requerido./i)).toBeNull();
   });
 });
