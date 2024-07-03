@@ -16,17 +16,12 @@ npm install
 npm run dev <-- Ejecuta la aplicación en modo de desarrollo.
 Abre http://localhost:3000 para verla en el navegador.
 
-npm run build
-Construye la aplicación para producción.
+npm run build <-- Construye la aplicación para producción.
 
-npm start
-Inicia la aplicación en modo de producción. Necesitas ejecutar npm run build antes de este paso.
+npm start <-- Inicia la aplicación en modo de producción. Necesitas ejecutar npm run build antes de este paso.
 
-npm run lint
-Ejecuta el linter para verificar y corregir el estilo del código.
+npm run lint <-- Ejecuta el linter para verificar y corregir el estilo del código.
 
-npm test
-Ejecuta las pruebas utilizando Jest.
+npm test <-- Ejecuta las pruebas utilizando Jest.
 
-npm run test:watch
-Ejecuta las pruebas en modo vigilancia (watch mode), para ejecutarlas automáticamente al realizar cambios.
+npm run test:watch <-- Ejecuta las pruebas en modo vigilancia (watch mode), para ejecutarlas automáticamente al realizar cambios.
