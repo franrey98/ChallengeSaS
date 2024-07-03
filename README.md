@@ -7,6 +7,7 @@ Asegúrate de tener Node.js y npm instalados en tu computadora.
 
 ## Clona el repositorio:
 git clone https://github.com/franrey98/ChallengeSaS.git
+
 cd ChallengeSaS
 
 ## Instala las dependencias:
