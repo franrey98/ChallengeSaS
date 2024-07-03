@@ -1,14 +1,14 @@
 .divider {
     background-color: #6b7280; 
-    height: 0.25rem; 
-    width: 10rem; 
-    border-radius: 9999px; 
+    height: 0.35rem; 
+    width: 15rem; 
+    border-radius: 10rem; 
     display: none; 
   }
   
   @media (min-width: 640px) {
     .divider {
-      display: none; 
+      display: block; 
     }
   }
  

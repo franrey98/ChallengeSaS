@@ -17,8 +17,8 @@ const About = () => {
       <div className={styles.section}>
         <p className={styles.text}>
           Arranque a estudiar programación hace mas de 3 años. Mi parte favorita
-          de desarrollar es el aspecto de resolución de problemas. Me encanta la
-          sensación de finalmente encontrar una solución a un problema. Mi
+          de desarrollar es el aspecto de la resolución de problemas. Me encanta
+          la sensación de finalmente encontrar una solución a un problema. Mi
           conjunto principal de tecnologías incluye React, React Native,
           Typescript Next.js, Node.js, Express.js y MongoDB. También tengo
           experiencia con ReduxJS. Siempre estoy buscando aprender nuevas
