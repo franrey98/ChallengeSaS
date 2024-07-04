@@ -17,7 +17,7 @@ describe("Header", () => {
     jest.restoreAllMocks();
   });
 
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     render(<Header />);
     expect(screen.getByRole("navigation")).toBeInTheDocument();
     links.forEach((link) => {
@@ -25,32 +25,28 @@ describe("Header", () => {
     });
   });
 
-  it("should hide the header when scrolling down", () => {
+  test("should hide the header when scrolling down", () => {
     render(<Header />);
 
-    // Scroll down
     Object.defineProperty(window, "scrollY", { value: 600 });
     fireEvent.scroll(window);
 
     expect(screen.getByRole("banner")).toHaveClass("hidden");
   });
 
-  it("should show the header when scrolling up", () => {
+  test("should show the header when scrolling up", () => {
     render(<Header />);
 
-    // Scroll down
     Object.defineProperty(window, "scrollY", { value: 600 });
     fireEvent.scroll(window);
 
-    // Scroll up
     Object.defineProperty(window, "scrollY", { value: 100 });
     fireEvent.scroll(window);
 
     expect(screen.getByRole("banner")).not.toHaveClass("hidden");
   });
 
-  it("should scroll smoothly to section when clicking a link", () => {
-    // Render Header and mock section elements
+  test("should scroll smoothly to section when clicking a link", () => {
     render(
       <>
         <Header />
@@ -63,7 +59,6 @@ describe("Header", () => {
     const link = screen.getByText(links[0].name);
     fireEvent.click(link);
 
-    // Simulate scrolling action and validate
     expect(link).toBeInTheDocument();
   });
 });
