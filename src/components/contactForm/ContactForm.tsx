@@ -99,7 +99,7 @@ const ContactForm = () => {
                   className={styles["error-message"]}
                 />
               </div>
-              <div style={{ display: "flex", justifyContent: "center" }}>
+              <div className={styles["display-button"]}>
                 <button
                   type="submit"
                   className={styles["submit-button"]}

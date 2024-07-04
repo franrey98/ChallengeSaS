@@ -92,6 +92,11 @@
     cursor: not-allowed;
   }
 
+  .display-button {
+    display: flex;
+    justify-content: center;
+  }
+
   .successMessage {
     position: absolute;
     margin-bottom: 0rem;
