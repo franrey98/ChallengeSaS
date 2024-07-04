@@ -1,7 +1,5 @@
 # Challenge SyS
 
-# Challenge SyS
-
 Desafio realizado para la empresa Security and System con el fin de unirme a su equipo de desarrolladores Frontend.
 
 ## Instalación
